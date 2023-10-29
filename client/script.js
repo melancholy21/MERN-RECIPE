@@ -1,16 +1,16 @@
-    const cat = document.querySelector(".toggle");
-    const show = document.querySelector(".show");
+const cat = document.querySelector(".toggle");
+const show = document.querySelector(".show");
 
-    cat.addEventListener("mouseover", () => {
-        cat.style.height = '300px'
-        show.classList.add("cat-flex")
-        show.classList.remove("hidden")
-    })
-    cat.addEventListener("mouseout", () => {
-        cat.style.height = '5rem'
-        show.classList.remove("cat-flex")
-        show.classList.add("hidden")
-    })
+cat.addEventListener("mouseover", () => {
+  cat.style.height = "300px";
+  show.classList.add("cat-flex");
+  show.classList.remove("hidden");
+});
+cat.addEventListener("mouseout", () => {
+  cat.style.height = "5rem";
+  show.classList.remove("cat-flex");
+  show.classList.add("hidden");
+});
 
 /* const email = document.querySelector("#email")
 const password = document.querySelector("#password")

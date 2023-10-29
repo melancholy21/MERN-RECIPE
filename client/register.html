@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="register.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="register.css" />
+    <script src="./scripts/register.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Register | Recipe</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="container">
-        <div class="register-form">
-            <h1>Register</h1>
-            <div class="fname-lname">
-                <p>First Name</p>
-                <input type="text" name="fname" id="fname" placeholder="First Name">
-                <p>Last Name</p>
-                <input type="text" name="lname" id="lname" placeholder="Last Name">
-            </div>
-            <div class="email-pw">
-                <p>Email</p>
-                <input type="text" name="email" id="email" placeholder="Email Address">
-                <p>Password</p>
-                <input type="password" name="password" id="password" placeholder="Password">
-            </div>
-            <button type="button"><a href="login.html">Sign Up</a></button>
+      <div class="register-form">
+        <h1>Register</h1>
+        <div class="fname-lname">
+          <p>First Name</p>
+          <input type="text" name="fname" id="fname" placeholder="First Name" />
+          <p>Last Name</p>
+          <input type="text" name="lname" id="lname" placeholder="Last Name" />
         </div>
+        <div class="email-pw">
+          <p>Email</p>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+          <p>Password</p>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <button type="button" class="button">Sign Up</button>
+        <a href="login.html" class="link">Already have an account?</a>
+      </div>
     </main>
-</body>
+  </body>
 </html>
