@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Mono', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: radial-gradient(circle farthest-corner at 32.7% 82.7%, rgba(173, 0, 171, 1) 8.3%, rgba(15, 51, 92, 1) 79.4%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.register-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 420px;
+    min-height: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 16px;
+}
+
+input {
+    display: block;
+    margin-bottom: 1rem;
+    min-width: 300px;
+    padding: 0.7rem;
+    border-radius: 12px;
+    outline: none;
+}
+
+p {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+button {
+    width: 250px;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #17141d;
+    color: papayawhip;
+}
