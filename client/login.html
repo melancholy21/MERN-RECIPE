@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script> 
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
     <script src="script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
     <title>Document</title>
 </head>
+
 <body>
-    <input type="text" name="email" id="email">
-    <input type="password" name="password" id="password">
-    <button type="button" class="button" >login</button>
+    <main class="container">
+        <section class="login-ui">
+            <div class="title">
+                <h3>Email</h3>
+            </div>
+            <input type="text" name="email" id="email" placeholder="Email Address">
+            <h3>Password</h3>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <div class="login-register"></div>
+            <button type="button" class="button">Login</button>
+            <p><span></span>or<span></span></p>
+            <button type="button" class="register">register</button>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
