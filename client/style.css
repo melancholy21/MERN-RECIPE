@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #17141d;
+    color: #fff;
+    font-family: 'DM Mono', monospace;
+}
+
+/* Custom Scrollbar */
+
+body::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
+}
+
+body::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}
+
+/* Start of Sidebar */
+
+.sidebar {
+    position: fixed;
+    background-color: #121212;
+    width: 5rem;
+    height: 100vh;
+    box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, .25);
+    z-index: 5;
+    transition: width 800ms ease;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 0.5rem;
+    transition: width 600ms ease;
+}
+
+.sidebar-items {
+    width: 100%;
+}
+.sidebar-items:last-child {
+    margin-top: auto;
+}
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.sidebar-link i {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.icons {
+    font-size: 1.8rem;
+}
+
+.sidebar:hover{
+    width: 16rem;
+    transition: width 600ms ease;
+}
+
+.sidebar:hover .link-text {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: width 800ms ease;
+}
+
+.sidebar-link:hover {
+    background-color: #17141d;
+    transition: width 800ms ease;
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center; 
+    background-color: #000;
+    width: 100%;
+    letter-spacing: 0.3ch;
+}
+
+.fa-utensils {
+    font-size: 2rem;
+}
+
+/* End of Sidebar */
+
+/* Hero Section */
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    transition: width 800ms ease;
+}
+.hero-header h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    transition: width 600ms ease;
+    cursor: pointer;
+}
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem 2rem 0 5rem;
+    line-height: 1.5rem;
+    transition: width 800ms ease;
+}
+
+.hero-subheading {
+    text-align: center;
+    margin: 0 0 6rem 3rem;
+}
+
+.hero-subheading h2 {
+    font-size: 2rem;
+    margin: 2rem 0 3rem 0;
+    font-weight: 800;
+}
+
+.hero-subheading p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 7rem;
+}
+
+.hero-subheading a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+    padding: 1.2rem;
+    text-align: center;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.hero-subheading i {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.hero-section img {
+    width: 620x;
+    height: 620px;
+    padding-bottom: 2rem;
+}
+
+.hero-subheading a:hover {
+    color: papayawhip;
+    background-color: #212020;
+    transform: translateY(1.1rem);
+    box-shadow: -7px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.hero-header h1:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* End of Hero Section */
+
+/* About Us Section*/
+
+.about-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #221e2b;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0.5rem;
+    margin-left: 7rem;
+}
+
+.about-header h2 {
+    text-align: center;
+    padding-top: 0.8rem;
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about-subheading p {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+    padding-top: 4rem;
+}
+
+.about-image img {
+    padding-top: 3rem;
+    width: 620px;
+    height: 550px;
+}
+
+.about-header:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* End of About Us */
+
+/* Recipe-List */
+
+.recipe-container {
+    width: 100%;
+    height: auto;
+    background-color: #221e2b;
+}
+.categories-list {
+    width: 100%;
+    height: 100vh;
+}
+
+.recipe-header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.recipe-header h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.recipe-category {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 2rem 0 9rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.recipe-category h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid #fff;
+    border-radius: 3rem;
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+}
+
+.recipe-category a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.recipe-category h3:hover {
+    background-color: #221e2b;
+}
+
+.recipe-header h2:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.universal-header h3 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.universal-header h3:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.grid-recipes-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 1.5rem 0 5.2rem;
+    padding: 1rem;
+}
+
+.grid-recipe-image img {
+    width: 580px;
+    height: 520px;
+    border: 2px solid #000;
+    border-radius: 9px;
+    margin-bottom: 6rem;
+    box-shadow: 10px 14px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.grid-recipe-image-1 img {
+    width: 580px;
+    height: 520px;
+    border: 2px solid #000;
+    border-radius: 9px;
+    margin: 0 0 6rem 1.5rem;
+    box-shadow: -10px 14px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.recipe-description-1 h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem 0 3rem 0;
+}
+
+.recipe-description-1 p {
+    text-align: center;
+    padding-left: 1rem;
+    font-size: 18px;
+    margin-bottom: 3rem;
+    border: 3px dashed #fff; 
+    border-radius: 16px;
+    padding: 0.3rem 0.3rem;   
+    word-spacing: -2px;
+}
+
+.recipe-description-1 a {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+    word-spacing: -2px;
+}
+
+.recipe-description-1 a:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.recipe-description-2 h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0 2rem 0;
+    font-weight: 600;
+}
+
+.recipe-description-2 p {
+    text-align: center;
+    padding: 0.4rem;
+    font-size: 18px;
+    font-size: 600;
+    border: 3px dashed #fff;
+    border-radius: 16px;
+    margin-bottom: 3rem;
+    word-spacing: -2px;
+}
+
+.recipe-description-2 a {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+    word-spacing: -2px;
+    transition: all 0.3s ease;
+}
+
+.recipe-description-2 a:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.recipe-description-3 h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 0 0.9rem 0;
+}
+
+.recipe-description-3 p {
+    text-align: center;
+    font-size: 18px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 3px dashed #fff;
+    border-radius: 16px;
+    word-spacing: -3px;
+    line-height: 1.8rem;
+}
+
+.recipe-description-3 a {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+    word-spacing: -10px;
+    transition: all 0.3s ease;
+}
+
+.recipe-description-3 a:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.recipe-description-4 h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0 2.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.recipe-description-4 p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0.2rem;
+    margin-bottom: 1.5rem;
+    border: 3px dashed #fff;
+    border-radius: 16px;
+    word-spacing: -4px;
+    line-height: 1.8rem;
+}
+
+.recipe-description-4 a {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+    word-spacing: -5px;
+}
+
+.recipe-description-4 a:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+}
+
+/* End of Recipe-List*/
+
+/* Popular Recipes */
+
+.popular-recipe {
+    width: 100%;
+    height: auto;
+    background-color: #17141d;
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 1rem;
+}
+
+.card-header img {
+    width: 210px;
+    height: 150px;
+    border-radius: 7px;
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card-header a {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.card-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1px;
+    padding-bottom: 2rem;
+    margin-left: 4rem;
+    word-spacing: -7px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    height: 340px;
+    width: 260px;
+    padding: 1rem;
+    margin: 0 2rem 1rem 3rem;
+    border-radius: 16px;
+    background-color: #221e2b;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-1.5rem); 
+}
+
+.card-header {
+    transition: all 0.3s ease;
+}
+
+.card-header a:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title h2:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* End of Popular Recipes*/
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 2rem 4rem 2rem;
+    height: 15px;
+    background-color: #000;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
+
+footer span {
+    font-size: 28px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+
+
+.flex{
+    width: 100%;
+    height: 5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cat-head{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.cat-flex{
+    background: inherit;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+}
+
+.show a{
+    width: max-content;
+}
+
+/* .toggle:hover{
+    height: 300px;
+    background: wheat;  
+} */
+
+
+.hidden {
+    display: none;
+}
+
+
+.show a{
+    color:white
+}
+
+.cat-style {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.cat-style:hover {
+    background-color: #17141d;
+    width: 100%;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}

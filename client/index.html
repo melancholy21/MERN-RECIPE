@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melancholy Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <ul class="sidebar-nav">
+            <li class="logo">
+                <a href="#" class="sidebar-link">
+                    <span class="link-text logo-text">Melancholy</span>
+                    <i class="fa-solid fa-utensils"></i>
+                </a>
+            </li>
+
+            <li class="sidebar-items">
+                <a href="#home" class="sidebar-link">
+                    <i class="fa-solid fa-house icons"></i>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+
+            <li class="sidebar-items flex toggle">
+                <span class="cat-head">
+                    <i class="fa-solid fa-book icons"></i>
+                    <span class="link-text">Categories</span>
+                </span>
+                <div class="hidden show">
+                    <div class="cat-links">
+                        <div class="cat-style">
+                            <a href="#breakfast">Breakfast recipes</a>
+                        </div>
+                        <div class="cat-style">
+                            <a href="#lunch">Lunch recipes</a>
+                        </div>
+                        <div class="cat-style">
+                            <a href="#dinner">Dinner recipes</a>
+                        </div>
+                        <div class="cat-style">
+                            <a href="#main-course">Main-course recipes</a>
+                        </div>
+                        <div class="cat-style">
+                            <a href="#appetizer">Appetizer recipes</a>
+                        </div>
+                        <div class="cat-style"></div>
+                            <a href="#dessert">Dessert recipes</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="sidebar-items">
+                <a href="#popular-recipe" class="sidebar-link">
+                    <i class="fa-solid fa-star icons"></i>
+                    <span class="link-text">Popular</span>
+                </a>
+            </li>
+
+            <li class="sidebar-items">
+                <a href="#about" class="sidebar-link">
+                    <i class="fa-solid fa-circle-exclamation icons"></i>
+                    <span class="link-text">About</span>
+                </a>
+            </li>
+
+            <li class="sidebar-items">
+                <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-moon icons"></i>
+                    <span class="link-text">Theme</span>
+                </a>
+            </li>
+            
+        </ul>
+    </aside>
+
+        <section id="home" class="hero-section">
+
+            <div class="hero-header">
+                <h1>Melancholy Recipe</h1>
+            </div>
+
+            <div class="hero-content">
+
+                <div class="hero-img">
+                <img src="recipe-img/hero-img.png">
+                </div>
+
+                <div class="hero-subheading">
+                <h2>Welcome to Melancholy Recipe!</h2>
+                <p>Explore a world of culinary delights, from appetizer to desserts.</p>
+
+                <a href="#recipe-list" class="explore-now">Explore Now <i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-header">
+                <h2 id="about">About Us</h2>
+            </div>
+            <div class="about-container">
+                <div class="about-subheading">
+                    <p>Welcome to Melancholy Recipes, your go-to destination for culinary inspiration and cooking adventures. We are
+                        passionate about food and are dedicated to sharing our love for cooking with you.</p> <br>
+                        
+                    <p>At Melancholy Recipes, we believe that cooking is not just about preparing meals; it's about creating memories,
+                        fostering connections, and celebrating the joy of good food.</p>
+                </div>
+
+                <div class="about-image">
+                    <img src="recipe-img/about-us-2.png">
+                </div>
+            </div>
+        </section>
+
+        <section id="recipe-list" class="categories-list">
+            <div class="recipe-header">
+                <h2>Categories</h2>
+            </div>
+            
+            <div class="recipe-category">
+                <a href="#breakfast">
+                    <h3>Breakfast recipes</h3>
+                </a>
+                <a href="#lunch">
+                    <h3>Lunch recipes</h3>
+                </a>
+                <a href="#dinner">
+                    <h3>Dinner recipes</h3>
+                </a>
+                <a href="#main-course">
+                    <h3>Main-course recipes</h3>
+                </a>
+                <a href="#appetizer">
+                    <h3>Appetizer recipes</h3>
+                </a>
+                <a href="#dessert">
+                    <h3>Dessert recipes</h3>
+                </a>
+                <!-- Add more recipe category + -->
+            </div>
+        </section>
+
+
+        <section class="recipe-container">        
+                <div id="breakfast" class="universal-header">
+                    <h3>Breakfast Recipes</h3>
+                </div>
+                <div class="grid-recipes-content">
+                    <div class="grid-recipe-image">
+                        <img src="recipe-img/tortilla breakfast wrap.jpeg">
+                    </div>
+                    <div class="recipe-description-1">
+                        <h3>Tortilla Breakfast Wrap</h3>
+                        <p>Inspired by the Egg and Cheese Bread Omelet, we made a complete breakfast wrap--tortilla, eggs, spinach, cheese and ham
+                        included--entirely in one skillet, for a go-to dish you can make in a hurry. Enjoy right out of the pan or with a few
+                        dashes of your favorite hot sauce.</p>
+                        <p>Level: Easy | Total: 10 min Active: 10 min | Yield: 1 Serving</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Tortilla Breakfast Wrap</a></p>
+                    </div>
+
+                    <div class="recipe-description-2">
+                        <h3>Cold Brew Iced Coffee</h3>
+                        <p>This recipe makes just two servings of cold brew, so if you're new to the method, it will be a good test batch to
+                        see
+                        exactly how strong you want your steep to be. Once you've found your sweet spot of brewing time, you can double,
+                        triple
+                        or even quadruple the yield. The strained concentrate will keep tightly sealed in the fridge for up to a week.
+                        </p>
+                        <p>Level: Easy | Total: 18 hrs 5 min Active: 5 min | Yield: 2 Servings</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Cold Brew Iced Coffee</a></p>
+                    </div>
+                    <div class="grid-recipe-image-1">
+                        <img src="recipe-img/breakfast coffee.jpeg">
+                    </div>
+                    
+                    <div class="grid-recipe-image">
+                        <img src="recipe-img/pancakes.jpeg">
+                    </div>
+                    <div class="recipe-description-3">
+                        <h3>Pancakes</h3>
+                        <p>Nothing beats a stack of fluffy, golden, totally homemade pancakes, especially when you’ve got an easy step-by-step
+                        recipe that lets you mix, flip and serve them up in about 20 minutes. They’re the ultimate breakfast with butter and
+                        maple syrup, but these are also great with jam, whipped cream or even chocolate sauce. You can also customize your
+                        pancakes with mix-ins like chocolate chips, nuts, blueberries or bananas.</p>
+                        <p>Level: Easy | Total: 22 min | Prep: 10 min Cook: 12 min | Yield: 4 Servings</p>
+                        <p>Get the Recipe here: <a href="#">Pancakes</a></p>
+                    </div>
+
+                    <div class="recipe-description-2">
+                        <h3>Bacon Egg and Cheese</h3>
+                        <p>The key elements to a great BEC are the melted cheese, scrambled egg that nestles
+                        perfectly onto the bread without falling off and salty crispy bacon. To make sure the cheese stays melted, we fold it
+                        into the center of the eggs just as they finish cooking so it stays warm.
+                        </p>
+                        <p>Level: Easy | Total: 10 mins Active: 10 mins | Yield: 1 Serving</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Bacon Egg and Cheese</a></p>
+                    </div>
+                    <div class="grid-recipe-image-1">
+                        <img src="recipe-img/bacon, egg, and cheese.jpeg">
+                    </div>
+                </div>
+
+                <div id="lunch" class="universal-header">
+                    <h3>Lunch Recipes</h3>
+                </div>
+                <div class="grid-recipes-content">
+                    <div class="grid-recipe-image">
+                        <img src="recipe-img/mexican chicken soup.jpeg">
+                    </div>
+                    <div class="recipe-description-1">
+                        <h3>Mexican Chicken Soup</h3>
+                        <p>A nourishing soup made with hominy and meat, pozole is prepared in a variety of ways throughout Mexico. Here, chili
+                        powder and peeled tomatoes stand in for guajillo and ancho chiles and provide a deep red color.</p>
+                        <p>Level: Easy | Total: 1 hr 5 mins | Prep: 30 mins Cook: 35 min | Yield: 4 Servings</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Mexican Chicken Soup</a></p>
+                    </div>
+                
+                    <div class="recipe-description-4">
+                        <h3>Chicken Soup with Wild Rice and Hominy</h3>
+                        <p>We love the combination of wild rice and hominy in this simple soup. Brown rice or any leftover cooked grain would work
+                        well, too. We use a few tricks to get maximum comforting flavor into the soup, starting by enriching the chicken broth
+                        with a roast chicken carcass and by adding chopped cilantro and scallion at the very end for freshness.</p>
+                        <p>Level: Easy | Total: 1 hr 10 mins Active: 1 hr 10 mins | Yield: 8 cups | 4 Serving</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Chicken Soup with Wild Rice and Hominy</a></p>
+                    </div>
+                    <div class="grid-recipe-image-1">
+                        <img src="recipe-img/chicken soup with wild rice and hominy.jpeg">
+                    </div>
+                
+                    <div class="grid-recipe-image">
+                        <img src="recipe-img/southwestern pulled brisket sandwiches.jpeg">
+                    </div>
+                    <div class="recipe-description-2">
+                        <h3>Southwestern Pulled Brisket Sandwiches</h3>
+                        <p>This is a great recipe for anyone who meal preps their lunch. You can cook the brisket over the weekend. After you shred
+                        it, store in the refrigerator for easy sandwiches and wraps all week long.</p>
+                        <p>Level: Easy | Total: 8 hrs 20 mins | Prep: 20 mins Cook: 8 hrs | Yield: 4 Servings</p>
+                        <p>Get the Recipe here: <a href="#">Southwestern Pulled Brisket Sandwiches</a></p>
+                    </div>
+                
+                    <div class="recipe-description-2">
+                        <h3>Italian Deli Pasta Salad</h3>
+                        <p>This speedy pasta salad brings all your deli counter favorites (salami, cheese and giardiniera) together in just 30
+                        minutes. Best of all, it makes 8 servings — so you have lunch for a few days!
+                        </p>
+                        <p>Level: Easy | Total: 10 mins Active: 10 mins | Yield: 1 Serving</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Italian Deli Pasta Salad</a></p>
+                    </div>
+                    <div class="grid-recipe-image-1">
+                        <img src="recipe-img/italian deli pasta salad.jpeg">
+                    </div>
+                </div>
+
+                <div id="dinner" class="universal-header">
+                    <h3>Dinner Recipes</h3>
+                </div>
+                <div class="grid-recipes-content">
+                    <div class="grid-recipe-image">
+                        <img src="recipe-img/simple taco recipe.jpg">
+                    </div>
+                    <div class="recipe-description-1">
+                        <h3>Simple Taco Soup</h3>
+                        <p>We first sampled this chili-like soup at a church dinner. What a warming dish for a cold day. And because it uses
+                        packaged seasonings with several cans of vegetables, it’s a snap to prepare.</p>
+                        <p>Level: Easy | Prep: 25 mins Cook: 25 mins | Yield: 8 Servings</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Simple Taco Soup</a></p>
+                    </div>
+                
+                    <div class="recipe-description-2">
+                        <h3>Crispy Fried Chicken</h3>
+                        <p>If you’ve wanted to learn how to make crispy fried chicken, this is the recipe for you. Always a picnic favorite, this
+                        deep fried chicken recipe is delicious either hot or cold.</p>
+                        <p>Level: Easy | Prep: 15 mins Cook: 15 mins/batch | Yield: 12 Servings</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Crispy Fried Chicken</a></p>
+                    </div>
+                    <div class="grid-recipe-image-1">
+                        <img src="recipe-img/crispy fried chicken.jpg">
+                    </div>
+                
+                    <div class="grid-recipe-image">
+                        <img src="recipe-img/chicken and dumplings.jpg">
+                    </div>
+                    <div class="recipe-description-2">
+                        <h3>The Best Chicken and Dumplings</h3>
+                        <p>Homemade chicken and dumplings from scratch harken back to my childhood and chilly days when we devoured those cute
+                        little balls of dough swimming in hot, rich broth. It’s one of those types of soup you’ll want to eat again and again.</p>
+                        <p>Level: Easy | Prep: 25 mins Cook: 1 hrs 10mins | Yield: 8 Servings</p>
+                        <p>Get the Recipe here: <a href="#">The Best Chicken and Dumplings</a></p>
+                    </div>
+                
+                    <div class="recipe-description-2">
+                        <h3>Filipino Chicken Adobo</h3>
+                        <p>My mom always makes her saucy Chicken Adobo recipe when I come home to visit. I think it’s even better the next day as
+                        leftovers —she says it’s because of the vinegar.</p>
+                        <p>Level: Easy | Prep: 10 min + marinating Cook: 30 mins | Yield: 6 Servings</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Filipino Chicken Adobo</a></p>
+                    </div>
+                    <div class="grid-recipe-image-1">
+                        <img src="recipe-img/Adobo.jpg">
+                    </div>
+                </div>
+
+                <div id="main-course" class="universal-header">
+                    <h3>Main-course Recipes</h3>
+                </div>
+                <div class="grid-recipes-content">
+                    <div class="grid-recipe-image">
+                        <img src="recipe-img/butter chicken.jpg">
+                    </div>
+                    <div class="recipe-description-1">
+                        <h3>Butter Chicken</h3>
+                        <p>Grilled chicken in a luscious tomato-based spiced curry sauce.</p>
+                        <p>Level: Easy | Prep: 30 mins Cook: 45 mins | Yield: 4 Servings</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Butter Chicken</a></p>
+                    </div>
+                
+                    <div class="recipe-description-2">
+                        <h3>Chili Con Carne</h3>
+                        <p>This great chilli recipe has to be one of the best dishes to serve to friends for a casual get-together. An easy sharing
+                        favourite that uses up storecupboard ingredients.</p>
+                        <p>Level: Easy | Prep: 10 mins Cook: 1 hr | Yield: 4 Servings</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Chili Con Carne</a></p>
+                    </div>
+                    <div class="grid-recipe-image-1">
+                        <img src="recipe-img/chili con carne.jpg">
+                    </div>
+                
+                    <div class="grid-recipe-image">
+                        <img src="recipe-img/spaghetti bolognese.jpg">
+                    </div>
+                    <div class="recipe-description-2">
+                        <h3>Spaghetti Bolognese</h3>
+                        <p>Our best ever spaghetti bolognese is super easy and a true Italian classic with a meaty, chilli sauce. This pasta
+                        bolognese recipe is sure to become a family favourite.</p>
+                        <p>Level: Easy | Prep: 25 mins Cook: 1 hrs 50 mins | Yield: 6 Servings</p>
+                        <p>Get the Recipe here: <a href="#">Spaghetti Bolognese</a></p>
+                    </div>
+                
+                    <div class="recipe-description-2">
+                        <h3>Spaghetti Carbonara</h3>
+                        <p>Discover how to make superb spaghetti carbonara. This cheesy pasta dish is an Italian favourite and with the right
+                        technique, you can make it perfect every time</p>
+                        <p>Level: Easy | Prep: 10 min - 20 mins Cook: 15 mins | Yield: 4 Servings</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Spaghetti Carbonara</a></p>
+                    </div>
+                    <div class="grid-recipe-image-1">
+                        <img src="recipe-img/spaghetti carbonara.jpg">
+                    </div>
+                </div>
+
+                <div id="appetizer" class="universal-header">
+                    <h3>Appetizer Recipes</h3>
+                </div>
+                <div class="grid-recipes-content">
+                    <div class="grid-recipe-image">
+                        <img src="recipe-img/teriyaki pineapple meatballs.jpg">
+                    </div>
+                    <div class="recipe-description-1">
+                        <h3>Teriyaki Pineapple Meatballs</h3>
+                        <p>These teriyaki pineapple meatballs appetizer changed so many times because of my family’s suggestions that it eventually
+                        became a main course. I think the homemade sauce sets these meatballs apart.</p>
+                        <p>Level: Easy | Prep: 20 mins Bake: 20 mins | Yield: 3 - 1/2 dozen</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Teriyaki Pineapple Meatballs</a></p>
+                    </div>
+                
+                    <div class="recipe-description-2">
+                        <h3>Fruit Charcuterie Board</h3>
+                        <p>Who says cheese and sausage get to have all the fun? Make this fruit charcuterie board a party go-to with any that are
+                        in season.</p>
+                        <p>Level: Easy | Takes: 25 minutes | Yield: 14 Servings</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Fruit Charcuterie Board</a></p>
+                    </div>
+                    <div class="grid-recipe-image-1">
+                        <img src="recipe-img/fruit charcuterie board.jpg">
+                    </div>
+                
+                    <div class="grid-recipe-image">
+                        <img src="recipe-img/orange-glazed meatballs.jpg">
+                    </div>
+                    <div class="recipe-description-2">
+                        <h3>Orange-Glazed Meatballs</h3>
+                        <p>I love the sweet orange marmalade paired with the zip of a jalapeno in this sweet-sour glaze.</p>
+                        <p>Level: Easy | Prep/Total: 30 mins | Yield: 20 Meatballs</p>
+                        <p>Get the Recipe here: <a href="#"><span class="left">Orange-Glazed Meatballs</span></a></p>
+                    </div>
+                
+                    <div class="recipe-description-2">
+                        <h3>Grilled Tomato-Peach Pizza</h3>
+                        <p>This delicious pizza is unique, healthy and easy to make. The fresh flavors make it a perfect appetizer for a summer
+                        party.</p>
+                        <p>Level: Easy | Prep: 20 mins + standing  Grill: 15 mins | Yield: 16 pieces</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Grilled Tomato-Peach Pizza</a></p>
+                    </div>
+                    <div class="grid-recipe-image-1">
+                        <img src="recipe-img/grilled tomato-peach pizza.jpg">
+                    </div>
+                </div>
+
+                <div id="dessert" class="universal-header">
+                    <h3>Dessert Recipes</h3>
+                </div>
+                <div class="grid-recipes-content">
+                    <div class="grid-recipe-image">
+                        <img src="recipe-img/blueberry bottom cake.webp">
+                    </div>
+                    <div class="recipe-description-1">
+                        <h3>Blueberry Bottom Cake</h3>
+                        <p>This cake is light, airy, and super refreshing with a lovely presentation, not to mention super easy to make. Try using
+                        different fruits or berries or different flavored gelatin, such as raspberry.</p>
+                        <p>Level: Easy | Prep: 10 mins Cook: 50 mins | Yield: 1 - 9x13 cake</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Blueberry Bottom Cake</a></p>
+                    </div>
+                
+                    <div class="recipe-description-2">
+                        <h3>Million Dollar Cake</h3>
+                        <p>The light and refreshing icing on this cake might just be worth a million dollars. While the cake is simply made from
+                        boxed yellow cake mix, the icing is the star of the show with cream cheese, confectioners' sugar, pineapples, mandarin
+                        oranges, vanilla pudding, and whipped topping. This tasty cake is one for any occasion!</p>
+                        <p>Level: Easy | Prep: 30 mins Cook: 25 mins | Yield: 1 - 9 inch layer cake</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Million Dollar Cake</a></p>
+                    </div>
+                    <div class="grid-recipe-image-1">
+                        <img src="recipe-img/million dollar cake.webp">
+                    </div>
+                
+                    <div class="grid-recipe-image">
+                        <img src="recipe-img/old-fashioned chocolate fudge.webp">
+                    </div>
+                    <div class="recipe-description-2">
+                        <h3>Old-Fashioned Chocolate Fudge</h3>
+                        <p>This five-ingredient decadent chocolate fudge is the perfect treat to ring in the cooler months. Reviewers recommend
+                        using Hershey's or Ghirardelli cocoa and using a candy thermometer for the best results.</p>
+                        <p>Level: Easy | Prep: 20 mins Cook: 15 mins | Yield: 64 1-inch squares</p>
+                        <p>Get the Recipe here: <a href="#">Old-Fashioned Chocolate Fudge</a></p>
+                    </div>
+                
+                    <div class="recipe-description-2">
+                        <h3>Tres Leche - Milk Cake</h3>
+                        <p>This tres leches cake has three different layers: cake, three-milk filling, and whipped cream frosting to. Reviewers
+                        like to top it with maraschino cherries, coconut, or cajeta, which is a caramelized milk.</p>
+                        <p>Level: Easy | Prep: 15 mins Cook: 30 mins | Yield: 1 9x13-inch cake</p>
+                        <p>Get the Recipe here: <a href="#" target="_blank">Tres Leche - Milk Cake</a></p>
+                    </div>
+                    <div class="grid-recipe-image-1">
+                        <img src="recipe-img/tres leche.webp">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="popular-recipe" class="popular-recipe">
+            <div class="title">
+                <h2>Popular Recipes</h2>
+            </div>
+            <section class="card-list">
+                <article class="card">
+                    <header class="card-header">
+                        <img src="recipe-img/million dollar caserole.webp">
+                        <h2>Million Dollar Caserole</h2>
+                        <a href="#">Get Recipe</a>
+                    </header>
+                </article>
+            
+                <article class="card">
+                    <header class="card-header">
+                        <img src="recipe-img/chef johns drunken noodles.webp">
+                        <h2>Chef John's Drunken Noodles</h2>
+                        <a href="#">Get Recipe</a>
+                    </header>
+                </article>
+            
+                <article class="card">
+                    <header class="card-header">
+                        <img src="recipe-img/balsamic pork chops.webp">
+                        <h2>Balsamic Pork Chops</h2>
+                        <a href="#">Get Recipe</a>
+                    </header>
+                </article>
+                <article class="card">
+                    <header class="card-header">
+                        <img src="recipe-img/firecracker chicken.webp">
+                        <h2>Firecracker Chicken</h2>
+                        <a href="#">Get Recipe</a>
+                    </header>
+                </article>
+            </section>
+        
+
+            <section class="card-list">
+            
+                <article class="card">
+                    <header class="card-header">
+                        <img src="recipe-img/easy beef bourguignon.webp">
+                        <h2>Easy Beef Bourguignon</h2>
+                        <a href="#">Get Recipe</a>
+                    </header>
+                </article>
+            
+                <article class="card">
+                    <header class="card-header">
+                        <img src="recipe-img/maple mustard meatballs.webp">
+                        <h2>Maple Mustard Meatballs</h2>
+                        <a href="#">Get Recipe</a>
+                    </header>
+                </article>
+            
+                <article class="card">
+                    <header class="card-header">
+                        <img src="recipe-img/sesame chicken noodle bowl.webp">
+                        <h2>Sesame Chicken Noodle Bowl</h2>
+                        <a href="#">Get Recipe</a>
+                    </header>
+                </article>
+                <article class="card">
+                    <header class="card-header">
+                        <img src="recipe-img/spaghetti bolognese.jpg">
+                        <h2>Spaghetti Bolognese</h2>
+                        <a href="#">Get Recipe</a>
+                    </header>
+                </article>
+            </section>
+
+            <section class="card-list">
+            
+                <article class="card">
+                    <header class="card-header">
+                        <img src="recipe-img/mexican chicken soup.jpeg">
+                        <h2>Mexican Toucan Soup</h2>
+                        <a href="#">Get Recipe</a>
+                    </header>
+                </article>
+            
+                <article class="card">
+                    <header class="card-header">
+                        <img src="recipe-img/simple taco recipe.jpg">
+                        <h2>Simple Taco Soup</h2>
+                        <a href="#">Get Recipe</a>
+                    </header>
+                </article>
+            
+                <article class="card">
+                    <header class="card-header">
+                        <img src="recipe-img/Adobo.jpg">
+                        <h2>Filipino Chicken Adobo</h2>
+                        <a href="#">Get Recipe</a>
+                    </header>
+                </article>
+                <article class="card">
+                    <header class="card-header">
+                        <img src="recipe-img/crispy fried chicken.jpg">
+                        <h2>Crispy Fried Chicken</h2>
+                        <a href="#">Get Recipe</a>
+                    </header>
+                </article>
+            </section>
+        </section>
+
+        <footer>
+            <p><span>&#169</span> Copyright 2023 | Melancholy | All Rights Reserved.</p>
+        </footer>
+<script src="https://kit.fontawesome.com/8c14e3130c.js" crossorigin="anonymous"></script>
+</body>
+</html>
