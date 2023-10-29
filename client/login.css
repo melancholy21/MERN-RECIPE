@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'DM Mono', sans-serif;
 }
 
 body {
-    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 43, 115, 1) 0%, rgba(4, 0, 4, 1) 90%);
+    background-image: radial-gradient(circle farthest-corner at 83.7% 4.3%, rgba(173, 0, 171, 1) 0%, rgba(15, 51, 92, 1) 90%);
 }
 
 .container {
@@ -16,23 +19,48 @@ body {
 }
 
 .login-ui {
-    width: 500px;
-    height: 500px;
+    min-width: 400px;
+    min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4.5px);
-    -webkit-backdrop-filter: blur(4.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.18);;
     padding: 4rem;
 }
 
-h3 {
+.login-ui h1 {
+    text-align: center;
+    min-width: 200px;
+    padding: 1rem;
+    margin-bottom: 3.5rem;
+    font-size: 2rem;
     color: #fff;
+}
+
+.login-ui h1:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.email {
+    color: #fff;
+    margin: 0 15rem 8px 0;
+}
+
+
+.pw {
+    color: #fff;
+    margin: 0 13rem 8px 0;
 }
 
 .login-register {
@@ -43,12 +71,48 @@ h3 {
 input {
     display: block;
     margin-bottom: 1rem;
-    width: 300px;
-    padding: 1rem;
+    min-width: 300px;
+    padding: 0.9rem;
     border-radius: 12px;
     outline: none;
 }
 
 .button {
-    text-align: center;
+    min-height: 50px;
+    min-width: 300px;
+    border-radius: 16px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000;
+    outline: none;
+    border: none;
 }
+
+.login-register {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.login-register a {
+    font-size: 1.1rem;
+    margin-top: 2.5rem;
+    color: #fff;
+    word-spacing: -2px;
+}
+
+.login-register a:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #17141d;
+    transition: all 0.3s ease;
+}
+
+
