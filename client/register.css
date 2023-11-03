@@ -25,7 +25,8 @@ body {
     justify-content: center;
     flex-direction: column;
     min-width: 420px;
-    min-height: 600px;
+    min-height: 610px;
+
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(8.5px);
@@ -59,6 +60,7 @@ button {
     padding: 0.8rem;
     margin-top: 1rem;
     border-radius: 12px;
+
     background-color: #000;
     color: #fff;
     border: none;
@@ -68,9 +70,11 @@ button {
 a {
     text-decoration: none;
     color: #fff;
+    margin-top: 1.3rem;
 }
 
 button:hover {
     background-color: #17141d;
     color: papayawhip;
+    cursor: pointer;
 }

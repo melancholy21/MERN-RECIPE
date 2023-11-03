@@ -19,12 +19,13 @@ body {
 }
 
 .login-ui {
-    min-width: 400px;
-    min-height: 300px;
+    min-width: 100px;
+    min-height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(8.5px);
@@ -36,9 +37,7 @@ body {
 
 .login-ui h1 {
     text-align: center;
-    min-width: 200px;
-    padding: 1rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
     font-size: 2rem;
     color: #fff;
 }
@@ -54,26 +53,30 @@ body {
 
 .email {
     color: #fff;
-    margin: 0 15rem 8px 0;
 }
 
+.email h3 {
+    margin-bottom: 12px;
+}
 
 .pw {
     color: #fff;
-    margin: 0 13rem 8px 0;
+}
+
+.pw h3 {
+    margin-bottom: 12px;
 }
 
 .login-register {
-    display: flex;
-    align-items: center;
+    text-align: center;
 }
 
 input {
     display: block;
     margin-bottom: 1rem;
-    min-width: 300px;
+    min-width: 320px;
     padding: 0.9rem;
-    border-radius: 12px;
+    border-radius: 9px;
     outline: none;
 }
 
@@ -96,7 +99,7 @@ input {
 
 .login-register a {
     font-size: 1.1rem;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     color: #fff;
     word-spacing: -2px;
 }
